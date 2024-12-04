@@ -10,12 +10,14 @@ const AboutMe = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.2 }}
-        className="flex flex-row  items-center"
+        className="flex items-center justify-between"  // Cambié a justify-between para separar los elementos
       >
-       
-        <div className="pl-16 text-center space-y-6 px-4">
-          <h2 className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-warm-peach via-warm-sand to-black animate-gradient">About Me</h2>
-          
+        {/* Contenedor de texto */}
+        <div className="w-1/2 pl-16 text-center space-y-6 px-4">
+          <h2 className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-warm-peach via-warm-sand to-black animate-gradient">
+            About Me
+          </h2>
+
           <motion.div
             className="space-y-4"
             initial="hidden"
@@ -37,9 +39,10 @@ const AboutMe = () => {
                 visible: { opacity: 1, y: 0 },
               }}
             >
-             I am a FullStack Developer specialized in Front-End, ready to boost your digital presence. With solid experience in key technologies such as HTML, CSS, TypeScript, JavaScript, React, NextJs, Express, SQL, and development tools like GitHub, Git, and ChartJs, I focus on transforming ideas into dynamic and functional web solutions. My goal is to create intuitive, high-performance experiences, solving development challenges with creativity and efficiency.
-
-If you’re looking for someone who can deliver innovative solutions and a range of personalized proposals to help you achieve your goals, I’m here to make it happen.
+              I am a FullStack Developer specialized in Front-End, ready to boost your digital presence.
+              With solid experience in key technologies such as HTML, CSS, TypeScript, JavaScript, React, NextJs, Express, SQL, and development tools like GitHub, Git, and ChartJs, I focus on transforming ideas into dynamic and functional web solutions.
+              My goal is to create intuitive, high-performance experiences, solving development challenges with creativity and efficiency.
+              If you’re looking for someone who can deliver innovative solutions and a range of personalized proposals to help you achieve your goals, I’m here to make it happen.
             </motion.p>
             <motion.p
               className="text-lg text-gray-600 leading-relaxed"
@@ -50,11 +53,9 @@ If you’re looking for someone who can deliver innovative solutions and a range
             >
               Whether it’s web development, software engineering, or learning new
               technologies, I strive to create impactful solutions.
-              
             </motion.p>
           </motion.div>
         </div>
-
       
         <motion.div
           className="border-4 rounded-full overflow-hidden shadow-xl mx-auto border-warm-sand"
