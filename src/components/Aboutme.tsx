@@ -37,8 +37,9 @@ const AboutMe = () => {
                 visible: { opacity: 1, y: 0 },
               }}
             >
-              I’m passionate about crafting digital experiences and solving
-              complex problems with code.
+             I am a FullStack Developer specialized in Front-End, ready to boost your digital presence. With solid experience in key technologies such as HTML, CSS, TypeScript, JavaScript, React, NextJs, Express, SQL, and development tools like GitHub, Git, and ChartJs, I focus on transforming ideas into dynamic and functional web solutions. My goal is to create intuitive, high-performance experiences, solving development challenges with creativity and efficiency.
+
+If you’re looking for someone who can deliver innovative solutions and a range of personalized proposals to help you achieve your goals, I’m here to make it happen.
             </motion.p>
             <motion.p
               className="text-lg text-gray-600 leading-relaxed"
@@ -49,6 +50,7 @@ const AboutMe = () => {
             >
               Whether it’s web development, software engineering, or learning new
               technologies, I strive to create impactful solutions.
+              
             </motion.p>
           </motion.div>
         </div>
