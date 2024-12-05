@@ -4,9 +4,9 @@ import { Project } from "@/lib/Project";
 import { ExternalLink, Github } from "lucide-react";
 import Image from "next/image";
 
-function ProjectCard({ title, description, technologies, imageUrl, link }: Project) {
+function ProjectCard({ title, description, technologies, imageUrl, link, githubLink }: Project) {
   return (
-    <div className="group relative overflow-hidden rounded bg-card border ">
+    <div className="group relative overflow-hidden bg-card">
       <div className="aspect-video overflow-hidden">
       <Image
           src={imageUrl}
@@ -18,7 +18,7 @@ function ProjectCard({ title, description, technologies, imageUrl, link }: Proje
       </div>
       <div className="p-6 space-y-4">
         <h3 className="text-xl font-semibold">{title}</h3>
-        <p className="text-muted-foreground">{description}</p>
+        <p className="text-muted-foreground italic">{description}</p>
         <div className="flex flex-wrap gap-2">
           {technologies.map((tech) => (
             <span
@@ -29,17 +29,17 @@ function ProjectCard({ title, description, technologies, imageUrl, link }: Proje
             </span>
           ))}
         </div>
-        <div className="flex gap-4">
+        <div className="flex gap-4 flex-row justify-around items-center ">
           <a
             href={link}
-            className="inline-flex items-center gap-2 text-sm hover:text-primary transition-colors"
+            className="inline-flex items-center gap-2 text-sm hover:text-primary transition-colors border bg-warm-peach rounded-xl p-2"
           >
             <ExternalLink className="w-4 h-4" />
             Live Demo
           </a>
           <a
-            href="#"
-            className="inline-flex items-center gap-2 text-sm hover:text-primary transition-colors"
+            href={githubLink}
+            className="inline-flex items-center gap-2 text-sm hover:text-primary transition-colors border bg-warm-peach rounded-xl p-2"
           >
             <Github className="w-4 h-4" />
             Source Code

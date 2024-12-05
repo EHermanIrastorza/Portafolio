@@ -6,17 +6,17 @@ import { motion } from "framer-motion";
 export function Header() {
   return (
     <header className="flex flex-col items-center justify-center h-screen text-center">
-     
+
       <motion.h1
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.3 }}
-        className="text-6xl md:text-8xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-warm-peach via-warm-sand to-warm-terra animate-gradient"
+        className="text-6xl md:text-8xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-warm-peach via-warm-sand to-black animate-gradient"
       >
         PORTFOLIO
       </motion.h1>
 
-      
+
       <motion.p
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -26,7 +26,7 @@ export function Header() {
         Crafting digital experiences with passion and precision
       </motion.p>
 
-    
+
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
@@ -34,9 +34,12 @@ export function Header() {
         className="flex gap-6 justify-center mt-12"
       >
         {[
-          { Icon: GithubIcon, href: "https://github.com" },
-          { Icon: LinkedinIcon, href: "https://linkedin.com" },
-          { Icon: Mail, href: "mailto:emma225h@gmail.com" },
+          { Icon: GithubIcon, href: "https://github.com/EHermanIrastorza" },
+          { Icon: LinkedinIcon, href: "https://www.linkedin.com/in/emmanuel-herman-4b3a3b219/" },
+          {
+            Icon: Mail,
+            href: "https://mail.google.com/mail/?view=cm&to=emma225h@gmail.com&su=Contact%20Request&body=Hello%20Emma,",
+          },
         ].map(({ Icon, href }, index) => (
           <motion.a
             key={index}

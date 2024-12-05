@@ -10,9 +10,9 @@ const AboutMe = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.2 }}
-        className="flex items-center justify-between"  // Cambié a justify-between para separar los elementos
+        className="flex items-center justify-between" 
       >
-        {/* Contenedor de texto */}
+        
         <div className="w-1/2 pl-16 text-center space-y-6 px-4">
           <h2 className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-warm-peach via-warm-sand to-black animate-gradient">
             About Me
@@ -33,7 +33,7 @@ const AboutMe = () => {
             }}
           >
             <motion.p
-              className="text-lg text-gray-600 leading-relaxed"
+              className="text-lg text-gray-600 leading-relaxed italic"
               variants={{
                 hidden: { opacity: 0, y: 10 },
                 visible: { opacity: 1, y: 0 },
@@ -45,7 +45,7 @@ const AboutMe = () => {
               If you’re looking for someone who can deliver innovative solutions and a range of personalized proposals to help you achieve your goals, I’m here to make it happen.
             </motion.p>
             <motion.p
-              className="text-lg text-gray-600 leading-relaxed"
+              className="text-lg text-gray-600 leading-relaxed italic"
               variants={{
                 hidden: { opacity: 0, y: 10 },
                 visible: { opacity: 1, y: 0 },
