@@ -10,11 +10,11 @@ const AboutMe = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.2 }}
-        className="flex items-center justify-between" 
+        className="flex flex-col sm:flex-row items-center justify-between space-y-6 sm:space-y-0" 
       >
-        
-        <div className="w-1/2 pl-16 text-center space-y-6 px-4">
-          <h2 className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-warm-peach via-warm-sand to-black animate-gradient">
+     
+        <div className="sm:w-1/2 sm:pl-16 text-center space-y-6 px-4">
+          <h2 className="text-2xl sm:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-warm-peach via-warm-sand to-black animate-gradient">
             About Me
           </h2>
 
@@ -33,7 +33,7 @@ const AboutMe = () => {
             }}
           >
             <motion.p
-              className="text-lg text-gray-600 leading-relaxed italic"
+              className="text-sm sm:text-lg text-gray-600 leading-snug sm:leading-relaxed italic"
               variants={{
                 hidden: { opacity: 0, y: 10 },
                 visible: { opacity: 1, y: 0 },
@@ -45,7 +45,7 @@ const AboutMe = () => {
               If you’re looking for someone who can deliver innovative solutions and a range of personalized proposals to help you achieve your goals, I’m here to make it happen.
             </motion.p>
             <motion.p
-              className="text-lg text-gray-600 leading-relaxed italic"
+              className="text-sm sm:text-lg text-gray-600 leading-snug sm:leading-relaxed italic"
               variants={{
                 hidden: { opacity: 0, y: 10 },
                 visible: { opacity: 1, y: 0 },
@@ -57,8 +57,9 @@ const AboutMe = () => {
           </motion.div>
         </div>
       
+      
         <motion.div
-          className="border-4 rounded-full overflow-hidden shadow-xl mx-auto border-warm-sand"
+          className="hidden sm:block border-4 rounded-full overflow-hidden shadow-xl mx-auto border-warm-sand"
           initial={{ y: -50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
